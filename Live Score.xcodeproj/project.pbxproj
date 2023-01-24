@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		E99EA20C297FBE4200E4EF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99EA20A297FBE4200E4EF35 /* Main.storyboard */; };
 		E99EA20E297FBE4300E4EF35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99EA20D297FBE4300E4EF35 /* Assets.xcassets */; };
 		E99EA211297FBE4300E4EF35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99EA20F297FBE4300E4EF35 /* LaunchScreen.storyboard */; };
+		F3FE2835369DCE3F7741F5A0 /* Pods_Live_Score.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570B216E0E414C6869A22079 /* Pods_Live_Score.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		570B216E0E414C6869A22079 /* Pods_Live_Score.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live_Score.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA7160031F98DA979718852 /* Pods-Live Score.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Score.debug.xcconfig"; path = "Target Support Files/Pods-Live Score/Pods-Live Score.debug.xcconfig"; sourceTree = "<group>"; };
+		E6581EB7D1CAD32E284DF14D /* Pods-Live Score.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Score.release.xcconfig"; path = "Target Support Files/Pods-Live Score/Pods-Live Score.release.xcconfig"; sourceTree = "<group>"; };
 		E99EA201297FBE4200E4EF35 /* Live Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Score.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99EA204297FBE4200E4EF35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99EA206297FBE4200E4EF35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3FE2835369DCE3F7741F5A0 /* Pods_Live_Score.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AED6A5A9B54646C2C92C1478 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7160031F98DA979718852 /* Pods-Live Score.debug.xcconfig */,
+				E6581EB7D1CAD32E284DF14D /* Pods-Live Score.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9E29D642CD88885D363A688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				570B216E0E414C6869A22079 /* Pods_Live_Score.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E99EA1F8297FBE4200E4EF35 = {
 			isa = PBXGroup;
 			children = (
 				E99EA203297FBE4200E4EF35 /* Live Score */,
 				E99EA202297FBE4200E4EF35 /* Products */,
+				AED6A5A9B54646C2C92C1478 /* Pods */,
+				B9E29D642CD88885D363A688 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E99EA215297FBE4300E4EF35 /* Build configuration list for PBXNativeTarget "Live Score" */;
 			buildPhases = (
+				103C62C3F98465CE51284CA1 /* [CP] Check Pods Manifest.lock */,
 				E99EA1FD297FBE4200E4EF35 /* Sources */,
 				E99EA1FE297FBE4200E4EF35 /* Frameworks */,
 				E99EA1FF297FBE4200E4EF35 /* Resources */,
+				311258FA11B5709FDE2FEC2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = E99EA1FC297FBE4200E4EF35 /* Build configuration list for PBXProject "Live Score" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		103C62C3F98465CE51284CA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Live Score-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		311258FA11B5709FDE2FEC2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Live Score/Pods-Live Score-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Live Score/Pods-Live Score-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Live Score/Pods-Live Score-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E99EA1FD297FBE4200E4EF35 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		E99EA216297FBE4300E4EF35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA7160031F98DA979718852 /* Pods-Live Score.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,11 +359,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Live Score/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Live Score";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,14 +374,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.live.sports.app.Live-Score";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E99EA217297FBE4300E4EF35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6581EB7D1CAD32E284DF14D /* Pods-Live Score.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,11 +393,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Live Score/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Live Score";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +408,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.live.sports.app.Live-Score";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

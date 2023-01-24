@@ -1,0 +1,6 @@
+framework module Pods_Live_Score {
+  umbrella header "Pods-Live Score-umbrella.h"
+
+  export *
+  module * { export * }
+}
