@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E99B8BC629800F8200066864 /* NewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99B8BC529800F8200066864 /* NewStoryboard.storyboard */; };
 		E99EA205297FBE4200E4EF35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99EA204297FBE4200E4EF35 /* AppDelegate.swift */; };
 		E99EA207297FBE4200E4EF35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99EA206297FBE4200E4EF35 /* SceneDelegate.swift */; };
 		E99EA209297FBE4200E4EF35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99EA208297FBE4200E4EF35 /* ViewController.swift */; };
@@ -124,6 +125,7 @@
 		570B216E0E414C6869A22079 /* Pods_Live_Score.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live_Score.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA7160031F98DA979718852 /* Pods-Live Score.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Score.debug.xcconfig"; path = "Target Support Files/Pods-Live Score/Pods-Live Score.debug.xcconfig"; sourceTree = "<group>"; };
 		E6581EB7D1CAD32E284DF14D /* Pods-Live Score.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Score.release.xcconfig"; path = "Target Support Files/Pods-Live Score/Pods-Live Score.release.xcconfig"; sourceTree = "<group>"; };
+		E99B8BC529800F8200066864 /* NewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewStoryboard.storyboard; sourceTree = "<group>"; };
 		E99EA201297FBE4200E4EF35 /* Live Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Score.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99EA204297FBE4200E4EF35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99EA206297FBE4200E4EF35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				E99EA20D297FBE4300E4EF35 /* Assets.xcassets */,
 				E99EA20F297FBE4300E4EF35 /* LaunchScreen.storyboard */,
 				E99EA212297FBE4300E4EF35 /* Info.plist */,
+				E99B8BC529800F8200066864 /* NewStoryboard.storyboard */,
 			);
 			path = "Live Score";
 			sourceTree = "<group>";
@@ -761,6 +764,7 @@
 			files = (
 				E99EA211297FBE4300E4EF35 /* LaunchScreen.storyboard in Resources */,
 				E99EA20E297FBE4300E4EF35 /* Assets.xcassets in Resources */,
+				E99B8BC629800F8200066864 /* NewStoryboard.storyboard in Resources */,
 				E99EA20C297FBE4200E4EF35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
