@@ -11,6 +11,7 @@
 		E994139A2980F66D001C5AED /* AvenirLTProLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = E99413992980F666001C5AED /* AvenirLTProLight.otf */; };
 		E994139C2980F691001C5AED /* AvenirLTProMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E994139B2980F68E001C5AED /* AvenirLTProMedium.otf */; };
 		E994139E2980F6A7001C5AED /* AvenirLTProHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E994139D2980F6A2001C5AED /* AvenirLTProHeavy.otf */; };
+		E99413A129810411001C5AED /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99413A029810411001C5AED /* DetailsViewController.swift */; };
 		E99B8BC629800F8200066864 /* NewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99B8BC529800F8200066864 /* NewStoryboard.storyboard */; };
 		E99EA205297FBE4200E4EF35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99EA204297FBE4200E4EF35 /* AppDelegate.swift */; };
 		E99EA207297FBE4200E4EF35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99EA206297FBE4200E4EF35 /* SceneDelegate.swift */; };
@@ -133,6 +134,7 @@
 		E99413992980F666001C5AED /* AvenirLTProLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvenirLTProLight.otf; sourceTree = "<group>"; };
 		E994139B2980F68E001C5AED /* AvenirLTProMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvenirLTProMedium.otf; sourceTree = "<group>"; };
 		E994139D2980F6A2001C5AED /* AvenirLTProHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvenirLTProHeavy.otf; sourceTree = "<group>"; };
+		E99413A029810411001C5AED /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E99B8BC529800F8200066864 /* NewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewStoryboard.storyboard; sourceTree = "<group>"; };
 		E99EA201297FBE4200E4EF35 /* Live Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Score.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99EA204297FBE4200E4EF35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -275,6 +277,14 @@
 				570B216E0E414C6869A22079 /* Pods_Live_Score.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E994139F298103E0001C5AED /* MatchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E99413A029810411001C5AED /* DetailsViewController.swift */,
+			);
+			path = MatchDetails;
 			sourceTree = "<group>";
 		};
 		E99EA1F8297FBE4200E4EF35 = {
@@ -699,6 +709,7 @@
 		E99EA366297FFAF700E4EF35 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				E994139F298103E0001C5AED /* MatchDetails */,
 				E99EA369297FFC7800E4EF35 /* home */,
 			);
 			path = viewcontrollers;
@@ -917,6 +928,7 @@
 				E99EA34C297FC80800E4EF35 /* Constants.swift in Sources */,
 				E99EA2FC297FC7CB00E4EF35 /* BasketballScoreResponse.swift in Sources */,
 				E99EA306297FC7CB00E4EF35 /* LeagueData04.swift in Sources */,
+				E99413A129810411001C5AED /* DetailsViewController.swift in Sources */,
 				E99EA2F1297FC7CB00E4EF35 /* RecentMatchList.swift in Sources */,
 				E99EA2F2297FC7CB00E4EF35 /* RecentMatchResponse.swift in Sources */,
 				E99EA2FA297FC7CB00E4EF35 /* BasketOdds.swift in Sources */,
