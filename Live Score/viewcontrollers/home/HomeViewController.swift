@@ -20,6 +20,17 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func initialSettings(){
+        main_table.dataSource = self
+        main_table.delegate = self
+        
+        main_table.register(UINib(nibName: "MatchTodayTableViewCell", bundle: nil), forCellReuseIdentifier: "MT")
+        main_table.register(UINib(nibName: "FeaturedNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "FN")
+        main_table.register(UINib(nibName: "LiveMatchesTableViewCell", bundle: nil), forCellReuseIdentifier: "LV")
+//        viewModel.delegate = self
+//        viewModel.getPlayers()
+    }
+    
     @objc func setRoundToMainCont(){
         
         main_cont.roundCorners(corners: [.topLeft,.topRight],radius: 30)
@@ -51,5 +62,48 @@ class HomeViewController: UIViewController {
         print("Search code")
         
     }
+    
+    
+    
 
+}
+
+
+
+
+
+
+
+extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row == 0 {
+            let MT = tableView.dequeueReusableCell(withIdentifier: "MT") as! MatchTodayTableViewCell
+
+            return MT
+        }
+        else{
+            if indexPath.row == 1 {
+                let FN = tableView.dequeueReusableCell(withIdentifier: "FN") as! FeaturedNewsTableViewCell
+                return FN
+            }else{
+                let MT = tableView.dequeueReusableCell(withIdentifier: "LV") as! LiveMatchesTableViewCell
+                return MT
+            }
+            
+        }
+    }
+    
+    
+   
+    
+    
 }

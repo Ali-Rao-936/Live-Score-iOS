@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		098EB13B29810CD100B60BCD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098EB13A29810CD100B60BCD /* Colors.xcassets */; };
+		098EB141298140D100B60BCD /* LiveMatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EB13F298140D100B60BCD /* LiveMatchesTableViewCell.swift */; };
+		098EB142298140D100B60BCD /* LiveMatchesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098EB140298140D100B60BCD /* LiveMatchesTableViewCell.xib */; };
+		098EB1472981414E00B60BCD /* FeaturedNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EB1452981414E00B60BCD /* FeaturedNewsTableViewCell.swift */; };
+		098EB1482981414E00B60BCD /* FeaturedNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098EB1462981414E00B60BCD /* FeaturedNewsTableViewCell.xib */; };
+		098EB14C2981419900B60BCD /* MatchTodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EB14A2981419900B60BCD /* MatchTodayTableViewCell.swift */; };
+		098EB14D2981419900B60BCD /* MatchTodayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098EB14B2981419900B60BCD /* MatchTodayTableViewCell.xib */; };
 		E99413982980F601001C5AED /* AvenirLTProBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = E99413972980F5EA001C5AED /* AvenirLTProBlack.otf */; };
 		E994139A2980F66D001C5AED /* AvenirLTProLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = E99413992980F666001C5AED /* AvenirLTProLight.otf */; };
 		E994139C2980F691001C5AED /* AvenirLTProMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E994139B2980F68E001C5AED /* AvenirLTProMedium.otf */; };
@@ -134,6 +140,12 @@
 
 /* Begin PBXFileReference section */
 		098EB13A29810CD100B60BCD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		098EB13F298140D100B60BCD /* LiveMatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchesTableViewCell.swift; sourceTree = "<group>"; };
+		098EB140298140D100B60BCD /* LiveMatchesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveMatchesTableViewCell.xib; sourceTree = "<group>"; };
+		098EB1452981414E00B60BCD /* FeaturedNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedNewsTableViewCell.swift; sourceTree = "<group>"; };
+		098EB1462981414E00B60BCD /* FeaturedNewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedNewsTableViewCell.xib; sourceTree = "<group>"; };
+		098EB14A2981419900B60BCD /* MatchTodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTodayTableViewCell.swift; sourceTree = "<group>"; };
+		098EB14B2981419900B60BCD /* MatchTodayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchTodayTableViewCell.xib; sourceTree = "<group>"; };
 		570B216E0E414C6869A22079 /* Pods_Live_Score.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Live_Score.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA7160031F98DA979718852 /* Pods-Live Score.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Score.debug.xcconfig"; path = "Target Support Files/Pods-Live Score/Pods-Live Score.debug.xcconfig"; sourceTree = "<group>"; };
 		E6581EB7D1CAD32E284DF14D /* Pods-Live Score.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live Score.release.xcconfig"; path = "Target Support Files/Pods-Live Score/Pods-Live Score.release.xcconfig"; sourceTree = "<group>"; };
@@ -300,8 +312,38 @@
 		098EB13E29813AC300B60BCD /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				098EB1492981418600B60BCD /* MatchToday */,
+				098EB1442981412A00B60BCD /* FeaturedNews  */,
+				098EB1432981410300B60BCD /* LiveMatches */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		098EB1432981410300B60BCD /* LiveMatches */ = {
+			isa = PBXGroup;
+			children = (
+				098EB13F298140D100B60BCD /* LiveMatchesTableViewCell.swift */,
+				098EB140298140D100B60BCD /* LiveMatchesTableViewCell.xib */,
+			);
+			path = LiveMatches;
+			sourceTree = "<group>";
+		};
+		098EB1442981412A00B60BCD /* FeaturedNews  */ = {
+			isa = PBXGroup;
+			children = (
+				098EB1452981414E00B60BCD /* FeaturedNewsTableViewCell.swift */,
+				098EB1462981414E00B60BCD /* FeaturedNewsTableViewCell.xib */,
+			);
+			path = "FeaturedNews ";
+			sourceTree = "<group>";
+		};
+		098EB1492981418600B60BCD /* MatchToday */ = {
+			isa = PBXGroup;
+			children = (
+				098EB14A2981419900B60BCD /* MatchTodayTableViewCell.swift */,
+				098EB14B2981419900B60BCD /* MatchTodayTableViewCell.xib */,
+			);
+			path = MatchToday;
 			sourceTree = "<group>";
 		};
 		AED6A5A9B54646C2C92C1478 /* Pods */ = {
@@ -884,10 +926,13 @@
 				098EB13B29810CD100B60BCD /* Colors.xcassets in Resources */,
 				E99EA211297FBE4300E4EF35 /* LaunchScreen.storyboard in Resources */,
 				E99EA20E297FBE4300E4EF35 /* Assets.xcassets in Resources */,
+				098EB1482981414E00B60BCD /* FeaturedNewsTableViewCell.xib in Resources */,
+				098EB142298140D100B60BCD /* LiveMatchesTableViewCell.xib in Resources */,
 				E994139C2980F691001C5AED /* AvenirLTProMedium.otf in Resources */,
 				E99B8BC629800F8200066864 /* NewStoryboard.storyboard in Resources */,
 				E994139A2980F66D001C5AED /* AvenirLTProLight.otf in Resources */,
 				E99413982980F601001C5AED /* AvenirLTProBlack.otf in Resources */,
+				098EB14D2981419900B60BCD /* MatchTodayTableViewCell.xib in Resources */,
 				E994139E2980F6A7001C5AED /* AvenirLTProHeavy.otf in Resources */,
 				E99EA20C297FBE4200E4EF35 /* Main.storyboard in Resources */,
 			);
@@ -993,6 +1038,7 @@
 				E99EA321297FC7CB00E4EF35 /* TeamInfo.swift in Sources */,
 				E99EA264297FC62F00E4EF35 /* AwardsAPI.swift in Sources */,
 				E99EA2F4297FC7CB00E4EF35 /* Odds.swift in Sources */,
+				098EB141298140D100B60BCD /* LiveMatchesTableViewCell.swift in Sources */,
 				E99EA2F3297FC7CB00E4EF35 /* VideoDetail.swift in Sources */,
 				E99EA362297FC80800E4EF35 /* SnackView.swift in Sources */,
 				E99EA2EF297FC7CB00E4EF35 /* BasketballAnalysisResponse.swift in Sources */,
@@ -1022,6 +1068,7 @@
 				E99EA31E297FC7CB00E4EF35 /* HomeStandings.swift in Sources */,
 				E99EA30E297FC7CB00E4EF35 /* List.swift in Sources */,
 				E99EA30C297FC7CB00E4EF35 /* BasketballRankData.swift in Sources */,
+				098EB1472981414E00B60BCD /* FeaturedNewsTableViewCell.swift in Sources */,
 				E99EA358297FC80800E4EF35 /* UISegmentedControl+Extension.swift in Sources */,
 				E99EA32D297FC7CB00E4EF35 /* EventTechnic.swift in Sources */,
 				E99EA34C297FC80800E4EF35 /* Constants.swift in Sources */,
@@ -1042,6 +1089,7 @@
 				E99EA31D297FC7CB00E4EF35 /* LeagueColorInfos.swift in Sources */,
 				E99EA2FF297FC7CB00E4EF35 /* LeagueStanding.swift in Sources */,
 				E99EA322297FC7CB00E4EF35 /* TeamStandingsResponse.swift in Sources */,
+				098EB14C2981419900B60BCD /* MatchTodayTableViewCell.swift in Sources */,
 				E99EA32B297FC7CB00E4EF35 /* FootballLeague.swift in Sources */,
 				E99EA2F7297FC7CB00E4EF35 /* MatchList.swift in Sources */,
 				E99EA300297FC7CB00E4EF35 /* LeagueStandingList.swift in Sources */,
