@@ -9,10 +9,21 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var main_cont: UIView!
+    
+    @IBOutlet weak var main_table: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
+        setRoundToMainCont()
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func setRoundToMainCont(){
+        
+        main_cont.roundCorners(corners: [.topLeft,.topRight],radius: 30)
+        
     }
     
     func setupNavBar(){
