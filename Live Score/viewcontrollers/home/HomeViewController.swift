@@ -11,19 +11,34 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupNavBar()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupNavBar(){
+        let left_btn = getButton(image: UIImage(named: "match_time")!)
+        left_btn.addTarget(self, action: #selector(matchTime), for: .touchUpInside)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: left_btn)
+        
+        let right_btn = getButton(image: UIImage(named: "Search")!)
+        right_btn.addTarget(self, action: #selector(search), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: right_btn)
+        
+        //change the title color
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : Colors.mainTitleColor()]
     }
-    */
+    
+    
+    @objc func matchTime(){
+        print("match list code")
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+//        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @objc func search(){
+        print("Search code")
+        
+    }
 
 }
