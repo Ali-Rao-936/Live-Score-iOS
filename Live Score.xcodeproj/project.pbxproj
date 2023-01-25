@@ -267,6 +267,29 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		098EB13C29813A9800B60BCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				098EB13D29813ABB00B60BCD /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		098EB13D29813ABB00B60BCD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				098EB13E29813AC300B60BCD /* TableViewCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		098EB13E29813AC300B60BCD /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		AED6A5A9B54646C2C92C1478 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,12 +328,13 @@
 		E99EA203297FBE4200E4EF35 /* Live Score */ = {
 			isa = PBXGroup;
 			children = (
+				E99EA366297FFAF700E4EF35 /* viewcontrollers */,
+				098EB13C29813A9800B60BCD /* View */,
 				098EB1352980F98100B60BCD /* New Group */,
 				E994139D2980F6A2001C5AED /* AvenirLTProHeavy.otf */,
 				E994139B2980F68E001C5AED /* AvenirLTProMedium.otf */,
 				E99413992980F666001C5AED /* AvenirLTProLight.otf */,
 				E99413972980F5EA001C5AED /* AvenirLTProBlack.otf */,
-				E99EA366297FFAF700E4EF35 /* viewcontrollers */,
 				E99EA32F297FC80800E4EF35 /* Utilities */,
 				E99EA28B297FC7CB00E4EF35 /* Models */,
 				E99EA21A297FC62E00E4EF35 /* API Manager */,

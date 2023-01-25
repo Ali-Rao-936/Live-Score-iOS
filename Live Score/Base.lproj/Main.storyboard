@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,18 +18,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-WH-ZwR">
-                                <rect key="frame" x="146" y="308" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jci-p3-tt5">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpR-T4-mDd">
+                                        <rect key="frame" x="0.0" y="15" width="393" height="700"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mh1-Kg-1YH">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="700"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="mh1-Kg-1YH" firstAttribute="top" secondItem="hpR-T4-mDd" secondAttribute="top" id="ciw-uS-M25"/>
+                                            <constraint firstAttribute="trailing" secondItem="mh1-Kg-1YH" secondAttribute="trailing" id="dKb-hu-LiT"/>
+                                            <constraint firstItem="mh1-Kg-1YH" firstAttribute="leading" secondItem="hpR-T4-mDd" secondAttribute="leading" id="lZ7-3k-RHA"/>
+                                            <constraint firstAttribute="bottom" secondItem="mh1-Kg-1YH" secondAttribute="bottom" id="nMp-xw-296"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="main_screen_bg"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hpR-T4-mDd" secondAttribute="trailing" id="1z9-iz-vqB"/>
+                                    <constraint firstItem="hpR-T4-mDd" firstAttribute="top" secondItem="Jci-p3-tt5" secondAttribute="top" constant="15" id="CTu-0D-EHU"/>
+                                    <constraint firstAttribute="bottom" secondItem="hpR-T4-mDd" secondAttribute="bottom" id="NlF-i2-mDn"/>
+                                    <constraint firstItem="hpR-T4-mDd" firstAttribute="leading" secondItem="Jci-p3-tt5" secondAttribute="leading" id="SVV-7C-ibB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jci-p3-tt5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F3r-Zi-yCy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jci-p3-tt5" secondAttribute="bottom" id="HGe-h5-Jm8"/>
+                            <constraint firstItem="Jci-p3-tt5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="egm-bE-HVg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jci-p3-tt5" secondAttribute="trailing" id="joe-AY-ZcU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Live Score" id="DWu-lF-vtM"/>
+                    <connections>
+                        <outlet property="main_cont" destination="hpR-T4-mDd" id="NMz-JO-g3W"/>
+                        <outlet property="main_table" destination="mh1-Kg-1YH" id="NEF-2Y-YBu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,6 +86,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="main_screen_bg">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
