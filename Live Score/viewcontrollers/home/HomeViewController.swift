@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupNavBar()
         setRoundToMainCont()
+        initialSettings()
         // Do any additional setup after loading the view.
     }
     
@@ -90,6 +91,7 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
 
             return MT
         }
+        
         else{
             if indexPath.row == 1 {
                 let FN = tableView.dequeueReusableCell(withIdentifier: "FN") as! FeaturedNewsTableViewCell
@@ -102,7 +104,22 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
         }
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if indexPath.row == 0 {
+            return 450
+        }
+        
+        else{
+            if indexPath.row == 1 {
+                return 550
+            }else{
+                return 750
+            }
+            
+        }
+        
+    }
    
     
     
