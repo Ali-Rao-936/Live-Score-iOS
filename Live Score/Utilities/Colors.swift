@@ -26,4 +26,9 @@ class Colors: NSObject {
         return UIColor(named: "gray1")!
     }
     
+    class func mainTitleColor()-> UIColor
+    {
+        return UIColor(named: "main_tittle")!
+    }
+    
 }
